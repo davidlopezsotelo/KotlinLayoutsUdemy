@@ -1,10 +1,10 @@
-package com.davidlopez.layouts.ui.home
+package com.davidlopez.layouts.ui.linear
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class LinearViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"
