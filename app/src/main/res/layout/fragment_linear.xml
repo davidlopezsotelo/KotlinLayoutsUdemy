@@ -1,64 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:padding="16dp"
     tools:context=".ui.linear.LinearFragment"
-    android:background="@android:color/holo_orange_light">
-
-    <TextView
-        android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="match parent"
-        android:background="@android:color/holo_blue_bright"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="wrap content"
-        android:background="@android:color/holo_blue_dark"
-        android:padding="16dp"
-        android:layout_margin="16dp"
-        android:textColor="@color/white"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Boton"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Boton"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Boton"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Boton"/>
+    android:padding="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="end|center_vertical"
-        android:background="@android:color/darker_gray">
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:background="@android:color/holo_orange_light">
 
-        <View
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@android:color/holo_green_light" />
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="match parent"
+            android:background="@android:color/holo_blue_bright"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wrap content"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="16dp"
+            android:layout_margin="16dp"
+            android:textColor="@color/white"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -67,15 +42,50 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Boton"
-            android:layout_margin="16dp"/>
+            android:text="Boton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boton"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Boton"/>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end|center_vertical"
+            android:background="@android:color/darker_gray">
+
+            <View
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@android:color/holo_green_light" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boton"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boton"
+                android:layout_margin="16dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boton"/>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fragment_frame" />
+
+        <include layout="@layout/fragment_constraint" />
+
 
     </LinearLayout>
 
-
-    </LinearLayout>
+</ScrollView>
